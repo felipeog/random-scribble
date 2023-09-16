@@ -29,7 +29,8 @@ export const dots = Array.from({ length: numberOfCoordinates }).map(() => {
 export const labels = Array.from({ length: numberOfCoordinates }).map(() => {
   const text = createSvgElement("text");
 
-  text.style.color = colors.foreground;
+  text.setAttribute("fill", colors.foreground);
+
   text.style.fontFamily = "sans-serif";
   text.style.fontSize = "12px";
   text.style.textAnchor = "middle";
